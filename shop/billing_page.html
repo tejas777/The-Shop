@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Billing Page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bootstrap-chosen-master/bootstrap-chosen-master/bootstrap-chosen.css">
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css"/>
+</head>
+<body style="font-family: 'Helvetica Neue' !important;">
+<nav class="navbar navbar-default navbar-fixed-top" style="border: 0px;background: #337ab7;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            </button>
+            <a class="navbar-brand" style="color: #FFFFFF;padding-left: 80px;" href="#">MY SHOP</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active1"><a href="billing_page.html">Table 1</a></li>
+                <li><a href="billing_page.html">Table 2</a></li>
+                <li><a href="billing_page.html">Table 3</a></li>
+                <li><a href="billing_page.html">Table 4</a></li>
+                <li><a href="billing_page.html">Table 5</a></li>
+                <li><a href="billing_page.html">Table 6</a></li>
+                <li><a href="billing_page.html">Table 7</a></li>
+                <li><a href="billing_page.html">Table 8</a></li>
+                <li><a href="billing_page.html">Table 9</a></li>
+                <li><a href="billing_page.html">Table 10</a></li>
+                <li><a href="billing_page.html">Table 11</a></li>
+                <li><a href="billing_page.html">Table 12</a></li>
+                <li><a href="#" id="myBtn1">Records</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="container-fluid">
+    <div class="row" style="margin-top: 70px">
+        <div class="col-md-3">
+            <form class="form-horizontal">
+                <div class="form-group" style="margin-top: -8px">
+                    <label class="col-sm-4 text-left">Date</label>
+                    <div class="col-sm-8">
+                        <input type="date" class="form-control" id="date" placeholder="date">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: -10px">
+                    <label class="col-sm-4 text-left">Bill No</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="billno" placeholder="bill no">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: -10px">
+                    <label class="col-sm-4 text-left">In Time</label>
+                    <div class="col-sm-8">
+                        <input type="time" class="form-control" id="intime" placeholder="In time">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: -10px">
+                    <label class="col-sm-4 text-left">Out Time</label>
+                    <div class="col-sm-8">
+                        <input type="time" class="form-control" id="outtime" placeholder="Out time">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: -10px">
+                    <div class="col-sm-offset-4 col-sm-8">
+                        <div class="checkbox" style="margin-top: -10px">
+                            <label>
+                                <input type="checkbox"> Complimentry
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: -10px">
+                    <label class="col-sm-4 text-left">Gross</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="gross" placeholder="gross">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: -10px">
+                    <label class="col-sm-4 text-left">Discount</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="discount" placeholder="discount">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: -10px">
+                    <label class="col-sm-4 text-left">To PAy</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="to_pay" placeholder="0.00">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: -10px">
+                    <label class="col-sm-4 text-left">Pay By</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="pay_by" placeholder="Cash">
+                    </div>
+                </div>
+            </form>
+
+            <h4 style="color: #333;max-width: 100%;font-weight: bold;font-family: 'Helvetica Neue';margin-top: -10px;">Last Bill's</h4>
+            <table class="table table-bordered" style="margin-top: -10px;">
+
+                <!--Table head-->
+                <tr>
+                    <th>Bill No</th>
+                    <th>Amount</th>
+                </tr>
+                </thead>
+                <!--Table head-->
+
+                <!--Table body-->
+                <tbody>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Rs. 60</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Rs. 50</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Rs. 70</td>
+                </tr>
+                </tbody>
+                <!--Table body-->
+            </table>
+        </div>
+
+
+
+        <div class="col-md-9">
+            <table class="table table-bordered" style="margin-top: -8px;">
+
+                <!--Table head-->
+                <tr>
+                    <th>Code</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Rate</th>
+                    <th>Amount</th>
+                </tr>
+                </thead>
+                <!--Table head-->
+
+                <!--Table body-->
+                <tbody>
+                <tr>
+                    <th scope="row"><input type="text" class="form-control" id="code" size="1"></th>
+                    <td>
+                        <form style="width: 350px !important;">
+                            <select class="chosen-select" style="height: 30px !important;">
+                                <option>Hello</option>
+                                <option>Hi</option>
+                                <option>Bye</option>
+                                <option>How</option>
+                                <option>Cow</option>
+                                <option>Take Care</option>
+                                <option>Good</option>
+                            </select>
+                        </form>
+                    </td>
+                    <td><input type="text" class="form-control" id="quantity" size="1"></td>
+                    <td>Rs. 50</td>
+                    <td>Rs. 50</td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="text" class="form-control" id="code" size="1"></th>
+                    <td>
+                        <form style="width: 350px !important;">
+                            <select class="chosen-select" style="height: 30px !important;">
+                                <option>Hello</option>
+                                <option>Hi</option>
+                                <option>Bye</option>
+                                <option>How</option>
+                                <option>Cow</option>
+                                <option>Take Care</option>
+                                <option>Good</option>
+                            </select>
+                        </form>
+                    </td>
+                    <td><input type="text" class="form-control" id="quantity" size="1"></td>
+                    <td>Rs. 50</td>
+                    <td>Rs. 50</td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="text" class="form-control" id="code" size="1"></th>
+                    <td>
+                        <form style="width: 350px !important;">
+                            <select class="chosen-select" style="height: 30px !important;">
+                                <option>Hello</option>
+                                <option>Hi</option>
+                                <option>Bye</option>
+                                <option>How</option>
+                                <option>Cow</option>
+                                <option>Take Care</option>
+                                <option>Good</option>
+                            </select>
+                        </form>
+                    </td>
+                    <td><input type="text" class="form-control" id="quantity" size="1"></td>
+                    <td>Rs. 50</td>
+                    <td>Rs. 50</td>
+                </tr>
+                </tbody>
+                <!--Table body-->
+            </table>
+        </div>
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 405px">
+                <div class="col-md-2 text-center" style="background-color: #333;padding: 20px;margin-right: 1px;color: #FFFFFF;">Amount<br><span style="color: #FFFFFF;">Rs. 0.00</span></div>
+                <div class="col-md-2 text-center" style="background-color: #333;padding: 20px;margin-right: 1px;color: #FFFFFF;">Total Quantity<br><span style="color: #FFFFFF;">0</span></div>
+                <div class="col-md-2 text-center" style="background-color: #333;padding: 20px;margin-right: 1px;color: #FFFFFF;">Total Item's<br><span style="color: #FFFFFF;">Rs. 0.00</span></div>
+                <div class="col-md-2 text-center" style="background-color: #333;padding: 30px 105px;color: #FFFFFF;">Table<br><span style="color: #FFFFFF;"></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <button type="button" class="btn btn-primary">Esc</button>
+            <button type="button" class="btn btn-primary">Clear Screen</button>
+            <button type="button" class="btn btn-primary">F5</button>
+            <button type="button" class="btn btn-primary">Refresh Screen</button>
+            <button type="button" class="btn btn-primary">F6</button>
+            <button type="button" class="btn btn-primary">Table Transfer</button>
+            <button type="button" class="btn btn-primary">F7</button>
+            <button type="button" class="btn btn-primary">Customer Name</button>
+            <button type="button" class="btn btn-primary">F9</button>
+            <button type="button" class="btn btn-primary">Parcel Details</button>
+            <button type="button" class="btn btn-primary">F8</button>
+            <button type="button" class="btn btn-primary">KOT View</button>
+            <button type="button" class="btn btn-primary">PgDn</button>
+            <button type="button" class="btn btn-primary">Create KOT</button>
+            <button type="button" class="btn btn-primary">END</button>
+            <button type="button" class="btn btn-primary">Create Bill</button>
+        </div>
+    </div>
+ </div>
+
+</div>
+<!--Modal1-->
+<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2><b>The Record of Bill's</b></h2>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <table class="table table-bordered">
+
+                            <!--Table head-->
+                            <tr>
+                                <th>Code</th>
+                                <th>Description</th>
+                                <th>Quantity</th>
+                                <th>Rate</th>
+                                <th>Amount</th>
+                            </tr>
+                            </thead>
+                            <!--Table head-->
+
+                            <!--Table body-->
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    Description
+                                </td>
+                                <td>1</td>
+                                <td>Rs. 50</td>
+                                <td>Rs. 50</td>
+                            </tr>
+                            </tbody>
+                            <!--Table body-->
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $("#myBtn1").click(function(){
+            $("#myModal1").modal();
+        });
+    });
+</script>
+<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="bootstrap-3.3.7/js/jquery-2.2.1.min.js"></script>
+<script src="chosen_v1.8.2/chosen.jquery.js"></script>
+<script>
+    $('.chosen-select').chosen();
+</script>
+</body>
+</html>

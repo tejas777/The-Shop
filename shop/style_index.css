@@ -1,0 +1,108 @@
+.container{ width:100%; margin:0 auto; }
+
+.form-control{
+    height: 30px !important;
+}
+
+.chosen-container-multi .chosen-choices{
+    height: 28px !important;
+    width: 160% !important;
+}
+
+.container > span > img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    white-space: nowrap;
+}
+figcaption{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+}
+#body1{
+    background: rgba(0, 0, 0, .9);
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+            ),url(shop1.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment:fixed;
+}
+
+body h1{
+    text-align: center;
+    padding-top: 3%;
+    color: #FFFFFF;
+    font-family: Verdana;
+    font-size: 3em;
+}
+body h3{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Monospace;
+    font-size: 1.5em;
+}
+body h4{
+    text-align: center;
+    line-height: 200%;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-family: Monospace;
+
+}
+
+.main_box{
+    padding: 30px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+ul{
+    list-style: none;
+    margin-left: -5px;
+}
+li a{
+    float: left;
+    margin-right: 9px;
+    color: #FFFFFF !important;
+    font-family: "Helvetica Neue" !important;
+}
+li a:hover{
+    color: #EEEEEE;
+}
+.modal-header h4{
+    color: #000;
+}
+.navbar-nav>li{
+margin-left: -10px !important;
+}
+.main_box input[type=email]{
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(0,0,4,0.8);
+}
+.main_box input[type=password]{
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(0,0,4,0.8);
+}
+.modal-header{
+    text-align: center;
+}
+.modal-dialog{
+    margin-top: 15%;
+}
